@@ -1,0 +1,32 @@
+.mt-20 {
+    margin-top: 20px;
+}
+
+.color-light-blue {
+    color: #4286f4;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.border-side {
+    border-left: 1px solid #37B5A5;
+    border-right:1px solid #37B5A5;
+}
+
+.font-upper {
+    text-transform: uppercase;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.display-inline {
+    display: inline-block;
+}

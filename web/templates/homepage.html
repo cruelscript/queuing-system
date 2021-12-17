@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="tables">
+        <div class="inline-table-2" style="margin-top: 100px">
+            <div class="title">Состояние источников</div>
+            <table class="table_dark">
+                <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Состояние</th>
+                    <th>Количество заявок</th>
+                    <th>Время ближайшей заявки</th>
+                    <th>Шаг</th>
+                </tr>
+                </thead>
+                <tbody id="state-source-body-table">
+                </tbody>
+            </table>
+        </div>
+        <div class="inline-table-2" style="margin-top: 100px">
+            <div class="title">Состояние буфера</div>
+            <table  class="table_dark">
+                <thead>
+                <tr>
+                    <th>Номер буфера</th>
+                    <th>Номер источника</th>
+                    <th>Номер заявки</th>
+                </tr>
+                </thead>
+                <tbody id="state-buff-body-table">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="inline-table-2" style="margin-top: 50px">
+            <div class="title">Состояние системы</div>
+            <table  class="table_dark">
+                <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Действие</th>
+                    <th>Назначенное устройство</th>
+                </tr>
+                </thead>
+                <tbody id="state-system-body-table">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="inline-table-2" style="margin-top: 50px">
+            <div class="title">Состояние обслуживающих приборов</div>
+            <table class="table_dark">
+                <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Состояние</th>
+                    <th>Время начала</th>
+                    <th>Продолжительность</th>
+                    <th>Номер заявки</th>
+                </tr>
+                </thead>
+                <tbody id="state-device-body-table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="margin: 0 auto; display: inline-block;">
+        <button id="next-btn">Следующий шаг</button>
+    </div>
+</div>
+{% endblock %}

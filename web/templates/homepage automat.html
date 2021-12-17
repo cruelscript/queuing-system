@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="tables" style="margin-top: 115px">
+        <div class="title">Характеристики источников, приборов и буферов ВС</div>
+        <table class="table_dark">
+            <thead>
+            <tr>
+                <th>Вероятность отказа</th>
+                <th>Среднее время в системе</th>
+                <th>Загруженность приборов</th>
+            </tr>
+            </thead>
+            <tbody id="state-auto-body-table">
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button id="start-btn">Старт</button>
+    </div>
+</div>
+{% endblock %}
